@@ -48,7 +48,7 @@ Contributions are welcome! If you have any suggestions, improvements, or new fea
 
 ## License
 
-This project is licensed under the [MIT License].
+This project is licensed under the [[MIT License]](https://github.com/2wenty2wo/pi-dvd-screensaver/blob/main/LICENSE "[MIT License]").
 
 ## Acknowledgements
 
