@@ -54,8 +54,9 @@ pip install RPi.GPIO
 ```
 
 3. Connect the Adafruit 128x64 OLED Bonnet to your Raspberry Pi.
+4. Enable I2C using `raspi-config`. Run `sudo raspi-config`, navigate to Interface Options > I2C, and enable it, then reboot.
 
-4. Run the script:
+5. Run the script:
 ```shell
 cd pi-dvd-screensaver
 python pi-dvd-screensaver.py
