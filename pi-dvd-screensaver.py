@@ -46,8 +46,8 @@ y = random.randint(0, disp.height - logo.height)
 dx = random.choice([-1, 1]) * 2
 dy = random.choice([-1, 1]) * 2
 
-# Create Adafruit SSD1306 display instance
-display = adafruit_ssd1306.SSD1306_I2C(128, 64, i2c)
+# The 'disp' object is already our display instance above, so no need to
+# create another.  All display operations should use this single instance.
 
 def clear_display():
     # Clear display.
@@ -77,7 +77,7 @@ while True:
             print("Button Right pressed")
         if not BUTTON_B.value:
             inverted = not inverted
-            display.invert(inverted)
+            disp.invert(inverted)
             print(f"Screen inversion toggled: {inverted}")
 
         # Draw a black filled box to clear the image.
@@ -87,8 +87,8 @@ while True:
         image.paste(logo, (x, y))
 
         # Show image.
-        display.image(image)
-        display.show()
+        disp.image(image)
+        disp.show()
 
         # Move position for next frame.
         x += int(dx)
