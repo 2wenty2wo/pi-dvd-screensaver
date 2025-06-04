@@ -49,8 +49,7 @@ git clone https://github.com/2wenty2wo/pi-dvd-screensaver.git
 
 2. Install the required dependencies:
 ```shell
-pip install adafruit-circuitpython-ssd1306
-pip install RPi.GPIO
+pip install -r requirements.txt
 ```
 
 3. Connect the Adafruit 128x64 OLED Bonnet to your Raspberry Pi.
